@@ -1,0 +1,338 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: #f1f1f1;
+}
+.container{
+    width:75%;
+    margin: 0 16.8%;
+    overflow: hidden;
+    border:1x solid #fff;
+}
+/* navbar*/
+nav{
+    width: 9%;
+    height: 658px;
+    overflow: hidden;
+    background-color: #222;
+    position: fixed;
+    z-index: 999;
+}
+nav ul,nav ul li{
+    overflow: hidden;
+}
+nav ul li img{
+    width:100%;
+    margin-bottom: 0;    
+}
+nav ul li:nth-child(1){
+    position: relative;
+}
+nav ul li:nth-child(1)::before{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    opacity: 0.3;  
+    background-color: #fff;
+}
+nav ul li:nth-child(1) {
+padding: 0 !important;
+margin: 0 !important;
+}
+nav ul li{
+list-style: none;
+text-align: center;
+font-size: 14px;
+}
+nav ul li a{
+    width: 100%;
+    padding:40px 24px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;   
+}
+nav ul li:nth-child(2) {
+    background-color: black;
+    margin-top: 0px;
+}
+nav ul li a:hover{
+    background-color: black;
+}
+/* end navbar*/
+
+/* start header*/
+.container header h1{
+    font-size: 64px;
+    font-weight: 400;
+    margin: 50px 0 10px !important;
+}
+.container header h1 , .container header p{
+    columns: #f1f1f1;
+    text-align: center;
+    margin-bottom: 22px;
+
+}
+.container header img{
+    width: 100%;
+}
+/* end header*/
+
+/* start about*/
+.container .about {
+    margin-bottom:120px;
+}
+.container .about h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px 0 20px;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    width: 20%;
+}
+.container .about .text{
+    color: #757575;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 1px !important;
+}
+.container .about h3{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 30px 0;
+}
+.container .about p{
+    color: #757575;
+    letter-spacing: 4px;
+    font-size: 15px;
+    margin-bottom:20px;
+}
+.container .about div{
+    background-color: #f1f1f1;
+    width:100%;
+    margin-bottom: 20px;
+    overflow: hidden;  
+} 
+.container .about div span{
+background-color: #757575;
+display: block;
+padding: 15px;
+width: 95%;
+}
+.container .about div .s1{ width: 80%;}
+.container .about div .s2{ width: 65%;}
+.container .about ul {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    margin-top:40px;
+    padding-left:9%;
+}
+.container .about ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 16px 0;
+    color: #000;  
+}
+.container .about button{
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-size: 15px;
+    margin-top: 30px ;
+    margin-bottom: 25px;
+}
+.container .about button:hover{background-color: #ccc;}
+.container .about .basic,.container .about .pro{
+    width:49%;
+    overflow: hidden;
+    background-color: #fff;
+    display:inline-block;
+    position: relative;
+}
+.container .about .basic::before,.container .about .pro::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: #222;
+    position: absolute;
+    top:0;
+    opacity: 0.4;
+}
+.container .about .basic:hover::before,.container .about .pro:hover::before
+{
+    opacity: 0;
+    z-index: -12;
+}
+.container .about .pro {
+    margin-left:1%;
+}
+
+.container .about .basic ul ,.container .about .pro ul{
+    width:100%;
+    margin:0;
+    padding: 0 !important;
+}
+.container .about .basic li, .container .about .pro li{
+    margin:0;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+.container .about .basic li , .container .about .pro li,.container .about .basic li h2 , .container .about .pro li h2{
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size:15px;
+    width:100%;
+}
+.container .about .basic li h2 , .container .about .pro li h2{
+    font-size: 30px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.container .about .basic li:nth-child(6)  , .container .about .pro li:nth-child(6){ 
+padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.container .about .basic li:nth-child(1) , .container .about .pro li:nth-child(1){
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    font-size: 24px;
+    color: #fff!important;
+    background-color: #616161 !important;
+}
+.container .about .basic li:last-child , .container .about .pro li:last-child{
+    background-color: #ccc;
+    border: none;
+    padding: 0;
+    margin:0;
+    padding: 8px 16px;
+    padding-top: 24px!important;
+    padding-bottom: 24px!important;
+}
+.container .about .basic ul li button , .container .about .pro ul li button{
+margin:0;
+
+}
+.container .about .basic ul li button:hover , .container .about .pro ul li button:hover{
+    background-color: #000;
+    color: #ccc;
+}
+
+.container .about .img1{
+width: 80px;
+border-radius: 50%;
+float: left!important;
+overflow: hidden;
+margin-right: 16px!important;
+}
+.container .about .p3{
+    text-align: justify!important;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    font-size:15px;
+    
+}
+.container .about .p3 span{
+    margin-right: 15px; 
+    font-size: 18px;
+    margin-top: 8px;
+    display: inline-block;
+}
+/* end about*/
+
+
+/* my photos */
+.container .photo h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px 0 20px;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    width: 20%;
+}
+.container .photo div{
+    width:49%;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 8px;
+}
+.container .photo div img{
+    width: 100%;
+}
+.container .photo .collect1{
+    float: left;
+}
+.container .photo .collect1 img ,.container .photo .collect2 img{
+    margin-bottom: 8px;
+} 
+
+
+/* end my photos*/
+/* start contact*/
+.container .contact h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 4px 0 20px;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    width: 20%;
+}
+.container .contact p{
+        color: #757575;
+        font-size: 15px;
+        margin-bottom:20px;
+        margin-left: 20px;
+}
+.container .contact form{
+    margin-top:3%;
+}
+.container .contact form p{margin-left: 0 !important;}
+.container .contact form input{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 10px;
+    
+}
+.container .contact form button{
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-size: 15px;
+    margin-top: 7px ;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+/* end contact*/
+/* start footer*/
+.container footer{
+    margin-top: 10%;
+}
+.container footer{
+    color: #757575;
+    font-size: 15px;
+    margin-bottom:20px;
+}
+/* end footer*/
